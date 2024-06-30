@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import axios from 'axios';
+
+axios.defaults.baseURL = 'https://localhost:7174'; // Adjust this URL to match your backend URL
+
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
